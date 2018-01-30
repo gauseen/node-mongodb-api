@@ -1,0 +1,35 @@
+{
+  "name": "mongodb-mongoose-api",
+  "version": "0.1.0",
+  "description": "用 mongodb 非关系型数据库开发接口",
+  "scripts": {
+    "dev": "nodemon ./bin/www",
+    "start": "set NODE_ENV=production && node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "mongoose",
+    "api"
+  ],
+  "author": "gauseen",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.3.0",
+    "mongodb": "^3.0.1",
+    "mongoose": "^5.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015-node5": "^1.2.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "nodemon": "^1.14.11"
+  }
+}
