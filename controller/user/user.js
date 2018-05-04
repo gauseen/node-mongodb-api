@@ -16,13 +16,14 @@ export function userAdd (ctx) {
 }
 
 // 查询用户
-export function userSearch (ctx) {
+export async function userSearch (ctx) {
 	const { query } = ctx.request
 	let source = {
 		name: query.name,
 	}
-	return UserModel.find(source).then(data => {
-		ctx.response.body = data
-	})
+
+	let users = await UserModel.find(source)
+
+	ctx.response.body = users
 }
 

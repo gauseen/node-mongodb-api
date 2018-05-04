@@ -8,6 +8,10 @@ mongoose.connect(config.url)
 const db = mongoose.connection
 
 db.once('open', () => {
+	console.log('数据库打开!')
+})
+
+db.once('connected', () => {
 	console.log('数据库连接成功!')
 })
 
@@ -17,8 +21,8 @@ db.error('error', err => {
 	mongoose.disconnect()
 })
 
-db.on('close', () => {
-	console.log('数据库断开，正在尝试重新连接数据库...')
+db.on('disconnected', () => {
+	// console.log('数据库断开')
 	mongoose.connect(config.url)
 	// mongoose.connect(config.url, { server: { auto_reconnect: true } })
 })
