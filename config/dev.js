@@ -1,6 +1,6 @@
 const config = {
 	port: process.env.PORT,
-	url: 'mongodb://gauseen:gjc*820413721@ds113700.mlab.com:13700/myblog',
+	url: 'mongodb://gauseen:abcd1234@ds113700.mlab.com:13700/myblog',
 	// url: 'mongodb://localhost:27017/learnDB',
 	session: {
 		key: 'koa:sess:dev', /** (string) cookie key (default is koa:sess) */

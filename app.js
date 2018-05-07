@@ -9,7 +9,9 @@ import router from './routes/index'
 
 const app = new Koa()
 
-// app.use(session(config.session, app))
+app.keys = ['sid']
+
+app.use(session(config.session, app))
 
 app.use(bodyparser({
 	enableTypes: ['json', 'form', 'text'],

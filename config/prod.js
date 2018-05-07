@@ -1,6 +1,6 @@
 const config = {
 	port: 8888,
-	url: 'mongodb://gauseen:gjc*820413721@ds113700.mlab.com:13700/myblog',
+	url: 'mongodb://gauseen:abcd1234@ds113700.mlab.com:13700/myblog',
 	session: {
 		key: 'koa:sess', /** (string) cookie key (default is koa:sess) */
 		/** (number || 'session') maxAge in ms (default is 1 days) */

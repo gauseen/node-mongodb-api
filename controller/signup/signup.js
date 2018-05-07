@@ -13,9 +13,12 @@ export async function Signup (ctx) {
 		console.log('保存成功', result)
 	})
 
+	// 种 cookie
+	// ctx.session.sid = 999
+	ctx.session.user = 999
 	// SignupModel.find((error, result) => {
 	// 	console.log("result: ", result)
 	// })
 
-	// ctx.response.body = SignupDB
+	ctx.response.body = SignupDB
 }
